@@ -19,6 +19,11 @@ impl Event {
         self.0.portev_events
     }
 
+    /// Get the source associated with this event.
+    pub fn source(&self) -> u16 {
+        self.0.portev_source
+    }
+
     /// Get the event source associated with this event.
     pub fn object(&self) -> usize {
         self.0.portev_object
